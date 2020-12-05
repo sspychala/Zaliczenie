@@ -1,0 +1,407 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.1018.2303                               -->
+<workbook original-version='18.1' source-build='2020.3.2 (20203.20.1018.2303)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Custom SQL Query (company)' inline='true' name='federated.008pux00djb7b119xgc0d100asv4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='185.220.204.57' name='mysql.0fb4qp50f54ywb19szkpi0le0yzi'>
+            <connection class='mysql' dbname='company' odbc-native-protocol='' one-time-sql='' port='3306' server='185.220.204.57' source-charset='' username='customer' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mysql.0fb4qp50f54ywb19szkpi0le0yzi' name='Custom SQL Query' type='text'>select e.firstName, e.lastName, o.country from employees e &#13;
+join offices o on e.officeCode = o.officeCode</_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='mysql.0fb4qp50f54ywb19szkpi0le0yzi' name='Custom SQL Query' type='text'>select e.firstName, e.lastName, o.country from employees e &#13;
+join offices o on e.officeCode = o.officeCode</_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>firstName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[firstName]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>firstName</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_4F76E1228721401BBCB74BDF68AE4F24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lastName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lastName]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>lastName</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_4F76E1228721401BBCB74BDF68AE4F24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[Custom SQL Query]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_4F76E1228721401BBCB74BDF68AE4F24]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Custom SQL Query' datatype='table' name='[__tableau_internal_object_id__].[_4F76E1228721401BBCB74BDF68AE4F24]' role='measure' type='quantitative' />
+      <column datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Poland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Custom SQL Query' id='_4F76E1228721401BBCB74BDF68AE4F24'>
+            <properties context=''>
+              <relation connection='mysql.0fb4qp50f54ywb19szkpi0le0yzi' name='Custom SQL Query' type='text'>select e.firstName, e.lastName, o.country from employees e &#13;
+join offices o on e.officeCode = o.officeCode</relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Custom SQL Query (company)' name='federated.008pux00djb7b119xgc0d100asv4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.008pux00djb7b119xgc0d100asv4'>
+            <_.fcp.ObjectModelTableType.true...column caption='Custom SQL Query' datatype='table' name='[__tableau_internal_object_id__].[_4F76E1228721401BBCB74BDF68AE4F24]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[_4F76E1228721401BBCB74BDF68AE4F24]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:_4F76E1228721401BBCB74BDF68AE4F24:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Custom SQL Query' datatype='integer' name='[__tableau_internal_object_id__].[_4F76E1228721401BBCB74BDF68AE4F24]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.008pux00djb7b119xgc0d100asv4].[Multiple Values]</rows>
+        <cols>[federated.008pux00djb7b119xgc0d100asv4].[none:country:nk]</cols>
+      </table>
+      <simple-id uuid='{3D03351C-56C4-4D98-BE17-8F82C9B2A7BB}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{626A95D8-3700-4CD6-B950-3008A8614A8A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='Sheet 1' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='6' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='5' param='vert' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Sheet 1' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7694DD7F-B97B-4039-8DC8-EC010FF06C61}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98340' id='1' param='vert' removable='false' w='98426' x='787' y='830'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='3423' id='3' w='98426' x='787' y='830' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard-nav' _.fcp.SetMembershipControl.true...type-v2='flipboard-nav' h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' w='98426' x='787' y='4253' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard' _.fcp.SetMembershipControl.true...type-v2='flipboard' h='84440' id='5' paired-zone-id='4' removable='false' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{1F06B01C-B534-408F-B469-7D5CE81F6CFA}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.008pux00djb7b119xgc0d100asv4].[none:country:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E6C7F2BB-91CE-46B0-ADAD-1CD36AB4FA1F}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{423A0D2C-5D5E-470D-95DF-EF6383879F48}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{3694D528-DD9D-440A-9501-44BA6C76F90A}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{C1E9EE2B-1054-4F86-AD5B-375BBE487D8C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
